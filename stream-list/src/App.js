@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
+import StreamList from './components/StreamList';
+import Movies from './components/Movies';
+import Cart from './components/Cart';
+import About from './components/About';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1 className="App-title">StreamList</h1>
+        <nav>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/movies">Movies</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+        </nav>
       </header>
+      <main>
+        <Switch>
+          <Route exact path="/" component={StreamList} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/cart" component={Cart} />
+          <Route path="/about" component={About} />
+        </Switch>
+      </main>
     </div>
   );
 }
