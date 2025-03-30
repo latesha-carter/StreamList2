@@ -1,10 +1,5 @@
 /* filepath: /Users/lateshabrewer-carter/stream-list/src/App.css */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@font-face {
-  font-family: 'WinkySans';
-  src: url('/Users/lateshabrewer-carter/stream-list/src/fonts/WinkySans-Medium.ttf') format('truetype');
-}
 
 .App {
   text-align: center;
