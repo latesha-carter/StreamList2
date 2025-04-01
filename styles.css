@@ -1,0 +1,48 @@
+/* ...existing code... */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#search-bar {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+#dark-mode-toggle {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#loading-spinner {
+    display: none;
+    margin: 20px auto;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+#loading-spinner.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+#error-message.hidden {
+    display: none;
+}

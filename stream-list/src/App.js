@@ -24,6 +24,7 @@ function App() {
         </header>
         <main>
           <Routes>
+            {/* Ensure the homepage renders StreamList */}
             <Route path="/" element={<StreamList />} />
             <Route path="/movies" element={<Movies />} />
             <Route path="/cart" element={<Cart />} />

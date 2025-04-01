@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stream List</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Basic styling for the form and list */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #f4f4f4;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <input type="text" id="search-bar" placeholder="Search streams..." />
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <button id="corner-dark-mode-toggle">Dark Mode</button>
+  </header>
+  <main>
+    <div id="error-message" class="hidden"></div>
+    <div id="loading-spinner" class="hidden"></div>
+    <div id="root"></div>
+    <h1>User Input List</h1>
+    <form id="userInputForm">
+      <input type="text" id="userInput" placeholder="Enter something" required>
+      <button type="submit">Add</button>
+    </form>
+    <ul id="userInputList"></ul>
+    <h2>User Tab</h2>
+    <ul id="userTabList"></ul>
+  </main>
+  <script src="index.js" type="module"></script>
+  <script src="script.js"></script>
+</body>
+</html>
