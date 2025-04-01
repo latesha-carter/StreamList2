@@ -3,10 +3,15 @@ import App from './App';
 import { MemoryRouter } from 'react-router-dom';
 
 test('renders learn react link', () => {
-  render(<App />);
+  render(
+    <MemoryRouter>
+      <App />
+    </MemoryRouter>
+  );
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
 test('renders StreamList title', () => {
   render(
     <MemoryRouter>
@@ -40,7 +45,7 @@ test('renders StreamList component for "/" route', () => {
       <App />
     </MemoryRouter>
   );
-  const streamListElement = screen.getByText(/StreamList/i); // Adjust based on StreamList component content
+  const streamListElement = screen.getByText(/StreamList/i);
   expect(streamListElement).toBeInTheDocument();
 });
 
@@ -50,7 +55,7 @@ test('renders Movies component for "/movies" route', () => {
       <App />
     </MemoryRouter>
   );
-  const moviesElement = screen.getByText(/Movies/i); // Adjust based on Movies component content
+  const moviesElement = screen.getByText(/Movies/i);
   expect(moviesElement).toBeInTheDocument();
 });
 
@@ -60,7 +65,7 @@ test('renders Cart component for "/cart" route', () => {
       <App />
     </MemoryRouter>
   );
-  const cartElement = screen.getByText(/Cart/i); // Adjust based on Cart component content
+  const cartElement = screen.getByText(/Cart/i);
   expect(cartElement).toBeInTheDocument();
 });
 
@@ -70,7 +75,7 @@ test('renders About component for "/about" route', () => {
       <App />
     </MemoryRouter>
   );
-  const aboutElement = screen.getByText(/About/i); // Adjust based on About component content
+  const aboutElement = screen.getByText(/About/i);
   expect(aboutElement).toBeInTheDocument();
 });
 
