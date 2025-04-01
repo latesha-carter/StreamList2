@@ -8,7 +8,89 @@
     color: white;
 }
 
-/* Styles for the navigation links container within the navbar */
+/* Styles for the navigat/* /stream-list/src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 50vh; /* Make header take up top half of the screen */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+}
+
+.App-header h1 {
+  font-family: 'Bungee Tint', sans-serif; /* Use Bungee Tint font */
+  margin: 0;
+}
+
+.App-main {
+  background-color: white;
+  min-height: 50vh; /* Make main take up bottom half of the screen */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0; /* Align to the right */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+ainer within the navbar */
 .navbar .nav-links {
     display: flex;
     gap: 15px;

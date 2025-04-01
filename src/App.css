@@ -1,82 +1,34 @@
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Poppins:wght@500&display=swap');
+/* /stream-list/src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 
 .App {
   text-align: center;
-  background-color: white; /* Set the background color to white */
-  min-height: 100vh; /* Ensure the background covers the full viewport height */
-  position: relative; /* Set relative positioning for the container */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 20vh;
+  background-color: black;
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
   padding: 20px;
 }
 
-.App-title {
-  font-family: 'Bungee Tint', cursive;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.App-header h1 {
+  font-family: 'Bungee Tint', sans-serif; /* Use Bungee Tint font */
+  margin: 0;
 }
 
-/* Apply Poppins to subtitles and navigation */
-.App-subtitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  color: #ccc;
-  margin: 10px 0;
-}
-
-.App-nav {
-  font-family: 'Poppins', sans-serif; /* Apply Poppins font to navigation */
-  font-size: 1rem;
-  color: #555; /* Adjust color as needed */
-  margin: 20px 0;
-}
-
-.App-nav a {
-  text-decoration: none;
-  color: inherit;
-  margin: 0 10px;
-}
-
-.App-nav a:hover {
-  text-decoration: underline;
-}
-
-.dropdown-container {
-  position: absolute; /* Position the dropdown relative to the .App container */
-  top: 20px; /* Distance from the top of the page */
-  right: 20px; /* Distance from the right edge of the page */
-}
-
-.dropdown-container label {
-  margin-right: 10px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-main {
+  background-color: white;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
 }
